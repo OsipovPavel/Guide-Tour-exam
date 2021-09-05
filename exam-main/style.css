@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+.one {
+    width: 20px;
+    height: 20px;
+}
+
+.two {
+    font-size: 16px;
+}
+
+.band {
+    border-radius: 100%;
+}
+
+.third {
+    background-color: transparent;
+}
+
+#header {
+    height: 100px;
+    background: linear-gradient(to left, #EF8E38, #108DC7);
+}
+
+.img-fluid {
+    height: 300px;
+    min-width: 100%;
+}
+
+.card {
+    min-width: 100%;
+}
+
+.card-img-overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+.card:hover .card-img-overlay {
+    display: block;
+}
+
+.big {
+    display: none;
+    width: 5%;
+}
+
+#recipeCarousel:hover .big {
+    display: flex;
+}
+
+.nav li {
+    cursor: pointer;
+}
+
+#footer {
+    background: linear-gradient(to left, #EF8E38, #108DC7);
+    height: 170px;
+}
+
+.bord {
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+@media (max-width: 850px) {
+    .Four {
+        display: none;
+    }
+}
